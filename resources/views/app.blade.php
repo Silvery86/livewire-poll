@@ -32,10 +32,23 @@
   @livewireStyles
 </head>
 
-<body class="container mx-auto mt-10 mb-10 max-w-lg">
+<body class="container mx-auto mt-10 mb-10 w-full">
   @livewireScripts
+<div class="flex space-x-4 w-full items-start justify-center">
+    <div class="w-1/2 justify-start ">
+        <h2>Create Poll</h2>
+        @livewire('create-poll')
+    </div>
+    <div class="w-1/2">
+        <h2>Polls List</h2>
+        @livewire('polls')
+    </div>
+</div>
 
-  @livewire('create-poll')
 </body>
+
+
+
+
 
 </html>
